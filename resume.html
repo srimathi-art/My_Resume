@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srimathi Palanisami - Resume</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f3f3;
+      color: #222;
+      line-height: 1.38;
+      font-size: 10.5pt;
+    }
+
+    .resume {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      padding: 13mm 15mm;
+      background: #fff;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 13px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+
+    .header .role {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      font-size: 9.5pt;
+    }
+
+    .contact a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    section {
+      margin-top: 10px;
+    }
+
+    .section-title {
+      font-size: 11.5pt;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #222;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    .summary {
+      text-align: justify;
+    }
+
+    /* Education */
+    .education-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.8pt;
+    }
+
+    .education-table th,
+    .education-table td {
+      border: 1px solid #555;
+      padding: 5px 7px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .education-table th {
+      font-weight: 700;
+    }
+
+    .education-table td:nth-child(3),
+    .education-table td:nth-child(4),
+    .education-table th:nth-child(3),
+    .education-table th:nth-child(4) {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* Skills */
+    .skills {
+      list-style: none;
+    }
+
+    .skills li {
+      margin-bottom: 2px;
+    }
+
+    .skills strong {
+      display: inline-block;
+      width: 130px;
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 8px;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 1px;
+    }
+
+    .project-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .project-links {
+      font-size: 9pt;
+      white-space: nowrap;
+    }
+
+    .project-links a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .technologies {
+      font-size: 9.2pt;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+
+    .project ul,
+    .achievements,
+    .leadership,
+    .certifications {
+      padding-left: 17px;
+    }
+
+    li {
+      margin-bottom: 1.5px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .resume {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 12mm 14mm;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      a {
+        color: #222 !important;
+        text-decoration: none !important;
+      }
+    }
+
+    @media (max-width: 800px) {
+      body {
+        background: #fff;
+      }
+
+      .resume {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 25px;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .project-heading {
+        display: block;
+      }
+
+      .project-links {
+        margin-top: 2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="resume">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>SRIMATHI PALANISAMI</h1>
+      <div class="role">SOFTWARE DEVELOPER | JAVA &amp; PYTHON | FULL STACK &amp; DATA ANALYTICS</div>
+
+      <div class="contact">
+        <a href="mailto:srimathipalanisami1909@gmail.com">srimathipalanisami1909@gmail.com</a>
+        <span>|</span>
+        <a href="tel:+918680936047">+91 8680936047</a>
+        <span>|</span>
+        <a href="https://linkedin.com/in/srimathi-palanisami" target="_blank">linkedin.com/in/srimathi-palanisami</a>
+        <span>|</span>
+        <a href="https://github.com/srimathi-art" target="_blank">github.com/srimathi-art</a>
+        <span>|</span>
+        <a href="https://hackerrank.com/srimathipalanis2" target="_blank">HackerRank</a>
+      </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section>
+      <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+      <p class="summary">
+        Final-year B.Tech. Information Technology student with a 9.4/10 CGPA and a strong foundation
+        in Java, Python, JavaScript, HTML, CSS, REST APIs, SQL, and MySQL, with hands-on experience
+        in full-stack development and growing proficiency in React. Interested in software development,
+        data analytics, and AI/ML, with experience building practical web applications and data-driven
+        solutions. A proactive learner and team leader with strong problem-solving skills and experience
+        participating in technical competitions, hackathons, and innovation challenges.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2 class="section-title">EDUCATION</h2>
+
+      <table class="education-table">
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Score</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Tech., Information Technology</td>
+            <td>Hindusthan College of Technology</td>
+            <td>9.4/10</td>
+            <td>2023–Present</td>
+          </tr>
+          <tr>
+            <td>Higher Secondary Certificate</td>
+            <td>Government Girls Higher Secondary School</td>
+            <td>80.5%</td>
+            <td>2022–2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+
+      <ul class="skills">
+        <li><strong>Programming:</strong> Java, Python, JavaScript, C</li>
+        <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, React.js, Vite</li>
+        <li><strong>Backend:</strong> Spring Boot, Flask, Django, Node.js, Express.js, REST APIs</li>
+        <li><strong>Database:</strong> SQL, MySQL, MongoDB, MySQL Workbench</li>
+        <li><strong>Data Analytics:</strong> Pandas, NumPy, Matplotlib, Power BI</li>
+        <li><strong>AI / Machine Learning:</strong> Scikit-learn, TensorFlow, OpenCV, MediaPipe</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Azure DevOps</li>
+        <li><strong>Core Concepts:</strong> OOP, Data Structures &amp; Algorithms, DBMS, SQL, Computer Networks</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2 class="section-title">PROJECTS</h2>
+
+      <article class="project">
+        <div class="project-heading">
+          <div class="project-title">S2V – Sign2Voice | AI-Based Assistive Communication System</div>
+          <div class="project-links">
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="technologies">Python | TensorFlow | OpenCV | MediaPipe | Flask | React | Raspberry Pi</div>
+        <ul>
+          <li>Developed an AI-powered communication system that recognizes sign language and converts recognized gestures into speech.</li>
+          <li>Implemented hand and body landmark processing using MediaPipe and computer vision techniques using OpenCV.</li>
+          <li>Built machine learning models using TensorFlow for sign-language recognition.</li>
+          <li>Developed a Flask backend and React frontend for integrating the AI model with the application interface.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-heading">
+          <div class="project-title">Smart Hospital Management System</div>
+          <div class="project-links">
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="technologies">Java | Spring Boot | MySQL | REST APIs</div>
+        <ul>
+          <li>Developed a backend application for managing hospital-related operations using Java and Spring Boot.</li>
+          <li>Implemented REST APIs for application data and business operations.</li>
+          <li>Designed database interactions using MySQL while applying object-oriented programming and layered backend architecture.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-heading">
+          <div class="project-title">Customer Churn Predictor</div>
+          <div class="project-links">
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="technologies">Python | Pandas | NumPy | Scikit-learn | Streamlit</div>
+        <ul>
+          <li>Developed a machine learning application to predict customer churn using customer attributes and behavioral data.</li>
+          <li>Performed data preprocessing and analysis using Pandas and implemented a Random Forest Classifier for prediction.</li>
+          <li>Built an interactive Streamlit interface for entering customer information and viewing prediction results.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-heading">
+          <div class="project-title">Dressify – E-Commerce Web Application</div>
+          <div class="project-links">
+            <a href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="technologies">HTML | CSS | JavaScript | MySQL</div>
+        <ul>
+          <li>Developed a responsive e-commerce web application with product browsing, user interaction, and shopping functionality.</li>
+          <li>Designed the frontend using HTML, CSS, and JavaScript for an interactive and user-friendly experience.</li>
+          <li>Integrated MySQL for storing and retrieving product and application data.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section>
+      <h2 class="section-title">ACHIEVEMENTS</h2>
+      <ul class="achievements">
+        <li><strong>Academic First Rank Holder</strong> – B.Tech Information Technology, 2025–26.</li>
+        <li><strong>Startup Mania 10.0 Finalist &amp; Team Leader</strong> – Presented an innovative technology solution.</li>
+        <li><strong>Niral Thiruvizha 3.0 Finalist</strong> – Selected for the regional-level innovation challenge.</li>
+        <li><strong>Top 30 Participant</strong> – Imagecon Academy Engineers Day Contest among approximately 10,000 participants.</li>
+        <li><strong>SDG 24-Hour Hackathon Participant</strong> – Developed a solution addressing real-world challenges.</li>
+      </ul>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section>
+      <h2 class="section-title">LEADERSHIP</h2>
+      <ul class="leadership">
+        <li><strong>Project Head &amp; Hackathon Team Leader:</strong> Led teams in Startup Mania 10.0 and Niral Thiruvizha 3.0, coordinating project development, team responsibilities, presentations, and event participation.</li>
+        <li><strong>Technical Event Organizer:</strong> Coordinated college technical and symposium events, managing participants and event activities.</li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section>
+      <h2 class="section-title">CERTIFICATIONS</h2>
+      <ul class="certifications">
+        <li>SQL (Advanced) – HackerRank</li>
+        <li>Python Programming – Udemy</li>
+        <li>Ignite for Entrepreneurs – Wadhwani Foundation, TNSDC</li>
+        <li>Data Analysis – NASSCOM FutureSkills Prime</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    // Print / save the resume as PDF using the browser's print dialog.
+    function printResume() {
+      window.print();
+    }
+  </script>
+
+</body>
+</html>
