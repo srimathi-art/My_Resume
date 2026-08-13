@@ -397,3 +397,28 @@ a {
     transition: none;
   }
 }
+.resume-actions {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.resume-actions button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  background: #1f4e79;
+  color: #fff;
+  font-size: 9pt;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resume-actions button:hover {
+  background: #163a5c;
+}
+
+@media print {
+  .resume-actions {
+    display: none !important;
+  }
+}

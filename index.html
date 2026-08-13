@@ -6,6 +6,7 @@
   <title>Srimathi Palanisami - Resume</title>
   <link rel="stylesheet" href="resume.css">
 
+
   <style>
     * {
       box-sizing: border-box;
@@ -226,6 +227,7 @@
 <body>
 
   <main class="resume">
+    
 
     <!-- HEADER -->
     <header class="header">
@@ -243,6 +245,7 @@
         <span>|</span>
         <a href="https://hackerrank.com/srimathipalanis2" target="_blank">HackerRank</a>
       </div>
+      
     </header>
 
     <!-- SUMMARY -->
@@ -401,14 +404,20 @@
         <li>Data Analysis – NASSCOM FutureSkills Prime</li>
       </ul>
     </section>
+    <div class="resume-actions">
+  <button id="printResume" type="button">
+    Download Resume
+  </button>
+</div>
+
 
   </main>
-
+  
   <script>
     // Print / save the resume as PDF using the browser's print dialog.
-    function printResume() {
-      window.print();
-    }
+   document.getElementById("printResume").addEventListener("click", () => {
+  window.print();
+});
   </script>
 
 </body>
